@@ -1,0 +1,147 @@
+#container1{
+	position: fixed;
+	display:block;
+	padding: 0;
+	margin: 0;
+	width: 15px;
+	height: 15px;
+	right: 0px;
+	top: 400px;
+	border:none;
+	overflow: hidden;
+	line-height:0;
+	z-index: 110000;
+}
+#button1{
+	width: 100%;
+	height: 100%;
+	border:none;
+	vertical-align:initial;
+}
+#update{
+	width: 100%;
+	height: 100%;
+	border:none;
+	vertical-align:initial;
+}
+#container2{
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.5);
+    position: fixed;
+    overflow:hidden;
+    word-wrap: none; 
+    background-color:rgba(256,0,0,0);
+    display: block;
+    right: 0%;
+    top: 10%;
+    width: 0px;
+    height: 80%;
+    z-index: 110001;
+    padding: 0px;
+    margin: 0px;
+    transition: width 0.5s ease;
+}
+#container3{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	top: 2%;
+	left:0%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: rgba(0,256,0,0);
+}
+#container3::-webkit-scrollbar {
+    width: 0em;
+}
+#container4{
+	position: absolute;
+	width: 90px;
+	height: 5%;
+	top: 81%;
+	left: 20px;
+	border:none;
+	border-width: 2px;
+	border-style: outset;
+	border-radius: 8px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: rgba(256,0,0,0.3);
+}
+#container5{
+	position: absolute;
+	width: 90px;
+	height: 5%;
+	top: 87%;
+	left: 20px;
+	border:none;
+	border-width: 2px;
+	border-style: outset;
+	border-radius: 8px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: rgba(256,0,0,0.3);
+}
+#container6{
+	position: absolute;
+	width: 90px;
+	height: 5%;
+	top: 93%;
+	left: 20px;
+	border:none;
+	border-width: 2px;
+	border-style: outset;
+	border-radius: 8px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: rgba(256,0,0,0.3);
+}
+.element .tooltiptext {
+    visibility: hidden;
+    background-color: rgba(0,0,0,1);
+    max-width:100px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 2;
+    top: -25%;
+    left: 39%;
+    border:none;
+    box-sizing: none;
+    max-width: 100px;
+    max-height: 39px;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: arial;
+    line-height: 10px;
+    margin-left: -60px;
+    transform: none;
+    word-wrap: break-word;
+    font-size-adjust:none;
+}
+.element:hover{
+	background-color: rgba(0,0,0,1);
+}
+.element:hover .tooltiptext{
+    visibility: visible;
+}
+.element{
+	  width: 50px;
+	  top:15px;
+      height: 50px;
+      border:none;
+      border-radius: 8px;
+      padding: 2px;
+      background-color: rgba(0,0,0,0);
+      margin:10px;
+      position: relative;
+      left: 30px;
+}
+.makefull{
+	border:none;
+	border-radius: 5px;
+	vertical-align:initial;
+	padding: 0;
+	-webkit-transform: none;
+}

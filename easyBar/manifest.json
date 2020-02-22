@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "easyBar",
+  "version": "1.0",
+  "description": "Add any web page for your convenient",
+  "icons": {
+  	"16":"icon16.png",
+  	"48":"icon48.png",
+  	"128":"icon128.png"
+  },
+   "author": "chathura heshanka wewelwala-sri Lannka"
+   ,
+  "browser_action": {
+  	"default_title": "easyBar",     
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["jquery-3.2.1.min.js","background.js"],
+     "persistent": false
+
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+    ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*","http://*/*"],
+      "js": ["jquery-3.2.1.min.js","content.js"],
+      "css": ["content.css"]
+    }
+  ],
+   "web_accessible_resources": [
+    "*.png",
+    "*.js"
+  ],
+    "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  "options_page": "help.html"
+}
